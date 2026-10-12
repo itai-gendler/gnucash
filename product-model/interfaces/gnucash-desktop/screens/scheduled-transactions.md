@@ -1,0 +1,44 @@
+---
+{
+  "entities": [
+    {
+      "entity": "scheduled-transaction",
+      "shows": [
+        "Name",
+        "Enabled",
+        "Recurrence",
+        "Start",
+        "End condition",
+        "Last occurrence",
+        "Remaining occurrences"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "gnucash/gnome/gnc-plugin-page-sx-list.cpp"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "gnucash/gnome/dialog-sx-editor.c#gnc_sxed_save_sx"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "gnucash/gnome/dialog-sx-since-last-run.c"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "libgnucash/app-utils/gnc-sx-instance-model.c#gnc_sx_instance_model_effect_change"
+    }
+  ]
+}
+---
+
+# Scheduled Transactions
+
+Read definitions and upcoming occurrences and select definitions for editing or removal.

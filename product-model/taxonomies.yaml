@@ -1,0 +1,22 @@
+{
+  "scenarioKinds": [
+    {
+      "id": "primary",
+      "name": "Primary",
+      "description": "An established successful route or distinguished accounting result.",
+      "colorSlot": 0
+    },
+    {
+      "id": "validation",
+      "name": "Validation",
+      "description": "Input validation, action refusal or a required correction before completion.",
+      "colorSlot": 1
+    },
+    {
+      "id": "edge",
+      "name": "Edge",
+      "description": "A consequential cancellation, conflict, external failure or bounded exceptional result.",
+      "colorSlot": 2
+    }
+  ]
+}
