@@ -68,6 +68,12 @@
     "zh-CN",
     "zh-TW"
   ],
+  "limitations": [
+    "A book is used by one session at a time; when its lock is held elsewhere, GnuCash warns and offers to open it read-only.",
+    "Every committed Transaction balances; any remainder goes to an Imbalance Split instead of leaving the Transaction unbalanced.",
+    "Online quotes come from Finance::Quote, an optional Perl module installed separately.",
+    "Due scheduled transactions are created only when Since Last Run runs in the desktop, on opening a book or on request."
+  ],
   "references": [
     {
       "kind": "code",
@@ -91,3 +97,7 @@
 # GnuCash
 
 GnuCash keeps personal and small-business double-entry accounting books. People organize accounts, record transactions, reconcile statements, schedule accounting, prepare budgets and business documents, apply payments, retain securities and prices, import accounting and read reports. The desktop and CLI expose their independently specified workflows. Online quotes use Finance::Quote when available.
+
+## Intent
+
+GnuCash lets individuals and small businesses keep their own double-entry accounting: everyday transactions, reconciliation, budgets, investments, and customer and vendor business, in books they hold themselves.
