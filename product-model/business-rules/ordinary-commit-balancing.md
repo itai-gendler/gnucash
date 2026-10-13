@@ -42,6 +42,11 @@
       "kind": "code",
       "role": "implementation",
       "target": "libgnucash/engine/Transaction.cpp"
+    },
+    {
+      "kind": "code",
+      "role": "implementation",
+      "target": "libgnucash/engine/Scrub.cpp#gnc_transaction_balance_no_trading"
     }
   ]
 }
@@ -49,4 +54,4 @@
 
 # Ordinary register commit applies imbalance handling
 
-Ordinary commit can add an imbalance-adjusting Split; excludes loading/shutdown paths.
+Ordinary commit can add an imbalance-adjusting Split; excludes loading/shutdown paths. A Transaction is balanced when its Split values sum to zero, and any remainder goes to one Imbalance Split in the Transaction currency.
